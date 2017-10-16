@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-stats.component.css']
 })
 export class ShowStatsComponent implements OnInit {
+    apiUrl: string;
+    stats: string[];
 
-  constructor() { }
+  constructor() {
+      this.apiUrl = 'OurURLApi'
+      this.stats = ['40', '1.25', 'aek']
+  }
 
   ngOnInit() {
   }

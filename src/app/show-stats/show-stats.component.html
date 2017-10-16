@@ -3,12 +3,10 @@
 </p>
 
 <table>
-  <th>HD stat 1</th>
-  <th>HD stat 2</th>
+  <th>Time played</th>
+  <th>KD ratio</th>
   <th>HD stat 3</th>
   <tr>
-    <td>stat 1</td>
-    <td>stat 2</td>
-    <td>stat 3</td>
+    <td *ngFor="let stat of stats">{{ stat }}</td>
   </tr>
 </table>
