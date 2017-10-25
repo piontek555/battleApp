@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule, Http } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ShowStatsComponent } from './show-stats/show-stats.component';
@@ -10,7 +11,8 @@ import { ShowStatsComponent } from './show-stats/show-stats.component';
     ShowStatsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
