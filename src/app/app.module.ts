@@ -4,6 +4,7 @@ import { HttpModule, Http } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ShowStatsComponent } from './show-stats/show-stats.component';
+import { ApiProviderService } from './api-provider.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,10 @@ import { ShowStatsComponent } from './show-stats/show-stats.component';
     BrowserModule,
     HttpModule
   ],
-  providers: [],
+  providers: [{
+    provide: ApiProviderService,
+    useClass: ApiProviderService
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

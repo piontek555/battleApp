@@ -3,10 +3,12 @@
 </p>
 
 <table>
-  <th>Time played</th>
+  <th>headshots</th>
   <th>KD ratio</th>
-  <th>HD stat 3</th>
+  <th>ShotsFired</th>
   <tr>
-    <td *ngFor="let stat of stats">{{ stat }}</td>
+    <td>{{ stats?.headshots }}</td> <!-- ? - stats is asynhronus-->
+    <td>{{ stats?.kills / stats?.deaths }}</td>
+    <td>{{ stats?.shotsFired }}</td>
   </tr>
 </table>
